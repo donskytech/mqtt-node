@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MQTT Node.js Subscriber</title>
+    <link rel="stylesheet" href="/assets/subscriber/subscriber.css" />
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  </head>
+  <body>
+    <h1>MQTT Node.js</h1>
+    <h2>Subscriber</h2>
+    <div class="line"></div>
+    <ul class="wrapper">
+      <li class="form-row">
+        <label for="topic">Topic</label>
+        <input type="text" id="topic" />
+      </li>
+      <li class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="10" readonly></textarea>
+      </li>
+      <li class="form-row">
+        <label for="status">Status</label>
+        <input type="text" id="status" readonly />
+      </li>
+      <li class="form-row">
+        <div class="btn-container">
+          <button type="button" id="subscribe">Subscribe</button>
+          <button type="button" id="unsubscribe">Unsubscribe</button>
+        </div>
+      </li>
+    </ul>
+    <script src="/assets/subscriber/subscriber.js"></script>
+  </body>
+</html>

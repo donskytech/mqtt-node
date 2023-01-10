@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.line {
+  border: 3px solid red;
+  width: 200px;
+}
+
+/****** Styling for the Layout ***********/
+.wrapper {
+  background-color: rgb(247, 244, 244);
+  list-style-type: none;
+  padding: 0;
+  border-radius: 5px;
+}
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em;
+}
+.form-row > label {
+  padding: 1em;
+  flex: 1;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.form-row > input {
+  flex: 2;
+}
+
+.form-row > input,
+.form-row > button {
+  padding: 1em;
+  margin: 10px 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.form-row > button {
+  background-color: #3f51b5;
+  color: white;
+  border: 0;
+  flex: 3;
+  font-weight: 600;
+}
